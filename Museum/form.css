@@ -1,0 +1,77 @@
+#f1-back{
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(6, 11, 34, 0.7),rgba(6,11,34,0.7)), url(./1339880\ \(1\).jpg);
+}
+
+
+
+#main{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#form{
+    background-image: url(./train.webp);
+    color: white;
+    
+}
+
+#output{
+    background-image: url(./train.webp);
+    color: white;  
+    
+}
+
+
+#add {
+    align-items: center;
+    padding: 6px 6px;
+    border-radius: 5px;
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    user-select: none;
+    margin: 10px 0;
+    transition-duration: 0.4s;
+   
+
+    
+}
+
+#add:hover{
+    background-color: #494949; 
+  color: white;
+  
+  
+}
+
+#place{
+    align-items: center;
+    padding: 6px 6px;
+    border-radius: 8px;
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    user-select: none;
+    transition-duration: 0.4s;
+}
+
+#place:hover{
+    background-color: #494949; 
+  color: white;
+  
+}
+
+
+
+label {
+    margin-right: 1em;
+    
+    display: inline-block;
+    
+}
+

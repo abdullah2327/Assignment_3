@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../fav/favicon-16x16.png">
+    <link rel="manifest" href="../fav/site.webmanifest">
+    <link rel="mask-icon" href="../fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="./museum.css">
+    <link rel="stylesheet" href="./form.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ticket</title>
+</head>
+<body>
+    
+    <section id="Cover">
+        <header>
+            <nav>
+                <div id="navs">
+                    <img src="../images/LOGO.png" alt="logo">
+                    <div class="dropdown">
+                        <button class="dropbtn"><img src="./menu bar.png" alt="" style="width: 100px;">
+                        </button>
+                        <div class="dropdown-content">
+
+                            <div id="links" >
+                                <ul>
+                                    <li><a href="../Home/Home.html">Home</a></li>
+                                    <li><a href="../About/about.html">About</a></li>
+                                    <li><a href="../Museum/Museum.html">Museum</a></li>
+                                    <li><a href="../By-products/product.html">By-Products</a></li>
+                                    <li><a href="../Dealers/dealers.html">Dealers</a></li>
+                                    <ul style="list-style-type:square">
+                                        <li><a href="../Ahmad/Ahmad.html">seller 1 &nbsp;&nbsp;</a></li>
+                                        <li><a href="../Jaff/jaff.html">seller 2</a></li>
+                                    </ul>
+                                    <li><a href="../Donate/donate.html">Purchase & Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    </section>
+
+    <section id="f1-back">
+        <div id="box">
+
+            <h1>Take a Tour!</h1>
+            
+        </div>
+
+
+    </section>
+    <br><br><br>
+
+
+
+    <section id="main">
+
+
+    
+
+    <form id="form">
+        <fieldset>
+        <p>
+        
+        <label for="tktChoice">Choice of Ticket</label>
+        <select name="tktChoice" id="tktChoice" style="width: 300px; height: 30px;">
+            <option value="LPass">Local Pass</option>
+            <option value="foreign_pass">Foreign Pass</option>
+        </select>
+        </p>
+
+        <fieldset>
+            <legend>Number of Tickets</legend>
+
+        <div id="tktTypes">
+            
+            <label for="adTkt">&nbsp;&nbsp;&nbsp; Adults</label>
+            <input type="number" id="adTkt" name="adTkt" style="width: 120px; height: 22px;" min="0"
+                max="200" value="0">
+            
+            
+            
+
+            <label for="child15">&nbsp;&nbsp;&nbsp;Children Below 15</label>
+            <input type="number" id="child15" name="child15" style="width: 120px; height: 22px;" min="0"
+                max="200" value="0">
+            
+            
+            
+
+            <label for="child6">&nbsp;&nbsp;&nbsp;Children Below 6</label>
+            <input type="number" id="child6" name="child6" style="width: 120px; height: 22px;" min="0"
+                max="200" value="0">
+            
+
+        </div>
+    </fieldset>
+
+
+        <br><br>
+        <fieldset>
+
+        <div id="duration">
+            <label for="timed"> Duration :</label>
+
+            <input type="radio" name="timed" id="3hr" value="3hours" checked> Three Hours
+
+            <input type="radio" name="timed" value="half" id="half"> Half Day
+
+            <input type="radio" name="timed" value="full" id="full"> Full Day
+
+        </div>
+    </fieldset>
+    <br><br>
+
+    <fieldset>
+
+        <div>
+            <div>
+
+            <label for="annualpass"> Annual Pass</label>
+            <input type="number" id="annualpass" name="annualpass" style="width: 120px; height: 22px;" min="0"
+                max="200" value="0">
+            </div>
+            <br>
+            <div>
+
+            <label for="foodtoken"> Food Token</label>
+            <input type="number" id="foodtoken" name="foodtoken" style="width: 120px; height: 22px;" min="0"
+                max="200" value="0">
+            </div>
+
+
+
+        </div>
+    </fieldset>
+    <br><br>
+
+        <button type="submit" id="add">Add Order</button>
+        <button type="submit" id="place">Place Order</button>
+
+    </fieldset>
+
+    </form>
+    <br><br>
+    <form id="output">
+        <fieldset>
+        
+        
+        <p>Current Orders: <span id="price1"> 0 </span></p>
+
+        <p>Overall Orders: <span id="price2">0</span></p>
+
+        <p>Cost Of Current Orders: <span id="price3">0</span> LKR</p>
+
+        <p>Overall Cost: <span id="price4">0</span> LKR</p>
+    </fieldset>
+        
+    </form>
+    <br><br><br>
+</section>
+
+
+ <!-- Footer -->
+ <section class="footer">
+    <footer>
+        <br><br><br>
+
+        <h4>ABOUT US</h4>
+        <p>We Provide you with the knowledge on Tea Plantations in Srilanka.</p>
+        <div class="icon">
+            <img src="../images/fb.png" alt="fb">
+            <img src="../images/insta.png" alt="insta">
+            <img src="../images/twitter.png" alt="twitter">
+            <img src="../images/linkedin.png" alt="Linked in">
+        </div>
+        <!--referenced from; wikipedia -->
+    </footer>
+    <br><br><br>
+</section>
+
+
+
+
+
+
+    <script src="./form.js"></script>
+    
+</body>
+</html>
